@@ -1,0 +1,117 @@
+/* Google Font Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap');
+
+/* Color variables defined */
+:root {
+    --main-color: #1F2937;
+    --secondary-color: #3882F6;
+    --neutral-gray: #E5E7EB;
+    --italic: 300;
+    --regular: 400;
+    --extra-bold: 900;
+}
+
+/* -------------------------General */
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 1100px;
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+/* -------------------------Header */
+.header {
+    background-color: var(--main-color);
+    margin: 0;
+    padding: 20px;
+}
+
+.header .container, .hero .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: var(--extra-bold);
+    color: white;
+    margin: 0;
+}
+
+.header .menu ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    color: var(--neutral-gray);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* -------------------------Hero */
+.hero {
+    background-color: var(--main-color);
+}
+
+.hero .container{
+    /* align-items: center; */
+    margin:60px 0;
+    padding: 20px;
+}
+.hero .main-text{
+    width: 400px;
+    /* flex: 1 0 auto; */
+}
+.hero h1{
+    color: white;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+button.button{
+    color: white;
+    font-size: 18px;
+    font-weight: var(--regular);
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 6px 20px;
+    border-radius: 10px;
+}
+
+button.button:hover{
+    background-color: white;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
