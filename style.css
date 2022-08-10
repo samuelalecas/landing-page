@@ -81,7 +81,7 @@ li a {
 }
 
 .hero .container {
-    /* align-items: center; */
+    align-items: start;
     margin: 60px 0;
     padding: 20px;
     flex-wrap: wrap;
@@ -89,13 +89,14 @@ li a {
 
 .hero .main-text {
     width: 400px;
-    /* flex: 1 0 auto; */
+    margin-bottom: 40px;
 }
 
 .hero h1 {
     color: white;
     font-size: 48px;
     margin-bottom: 10px;
+    line-height: 42px;
 }
 
 .hero p {
@@ -104,17 +105,15 @@ li a {
     margin-bottom: 20px;
 }
 
-.hero img {
-    margin-top: 40px;
-}
-
 button.button {
     color: white;
     font-size: 18px;
     font-weight: var(--regular);
     background-color: var(--secondary-color);
     border: none;
-    padding: 6px 20px;
+    height:35px;
+    margin: 10px 0;
+    padding: 0 34px;
     border-radius: 10px;
 }
 
@@ -130,7 +129,7 @@ button.button:hover {
     flex-direction: column;
     align-items: center;
     padding: 40px;
-    margin-bottom: 40px;
+    margin: 60px 0;
 }
 
 .items {
@@ -155,24 +154,54 @@ button.button:hover {
 }
 
 /* -------------Quote */
-.block.quote{
+.block.quote {
     background-color: var(--neutral-gray);
 }
 
-.block.quote .container{
+.block.quote .container {
     display: flex;
     flex-direction: column;
-    margin:60px;
-    padding: 20px;
+    margin: 100px 0;
+    padding: 0 80px;
 }
-.cite{
+
+.cite {
     font-size: 36px;
     font-style: italic;
     font-weight: var(--italic);
+    color: var(--main-color)
 }
-.name{
+
+.name {
     margin-top: 20px;
     align-self: end;
     font-size: 18px;
     font-weight: bold;
+    color: var(--main-color)
+}
+
+/* -------------Call-to-action */
+.block.call .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1000px;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    color: white;
+    margin: 100px 20px;
+    padding: 24px 40px 24px 40px ;
+    border-radius: 8px;
+}
+
+.button.stroke{
+    border: 2px solid white;
+}
+
+/* -------------Footer */
+
+footer.block{
+    padding: 60px 0;
+    color: white;
+    background-color: var(--main-color);
 }
