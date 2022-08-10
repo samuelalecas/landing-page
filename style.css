@@ -83,6 +83,7 @@ li a {
     /* align-items: center; */
     margin:60px 0;
     padding: 20px;
+    flex-wrap: wrap;
 }
 .hero .main-text{
     width: 400px;
@@ -100,6 +101,9 @@ li a {
     margin-bottom: 20px;
 }
 
+.hero img{
+    margin-top: 40px;
+}
 button.button{
     color: white;
     font-size: 18px;
@@ -114,4 +118,32 @@ button.button:hover{
     background-color: white;
     color: var(--secondary-color);
     cursor: pointer;
+}
+
+/* -------------Some random information */
+.block.information .container{
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.items .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+}
+.item img{
+    width: 100px;
+    height: auto;
+    margin: 20px;
 }
